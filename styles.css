@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    width: 100%;
+    padding: 10px 12px 10px 218px;
+    background-color: #507299;
+}
+
+main {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 270px 485px 1fr;
+    background-color: #edeef0;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    color: #808080;
+    background-color: white;
+}
+
+.menuSection {
+    padding: 22px 50px 0px 20px;
+    grid-column: 1;
+}
+
+.menuSection ul {
+    list-style-type: none;
+}
+
+.menuSection > ul > li {
+    margin-bottom: 22px;
+}
+
+.menuSection > ul > li:hover {
+    background-color: #5072991a;
+}
+
+.contentWrapper {
+    grid-column: 2;
+    font-size: 16px;
+    color: black;
+}
+
+.sideInfo {
+    position: fixed;
+    right: 20px;
+    top: 60px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.infoCard {
+    padding: 10px;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.paddingBlock {
+    padding: 12px;
+}
+
+.imageBlock > img {
+    width: 100%;
+    display: block;
+}
+
+.textBlock {
+    text-align: justify;
+}
+
+.interactionRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerBlock {
+    background-color: white;
+    z-index: 1;
+}
+
+.highlightText {
+    background-color: #e8e8e8;
+    margin-bottom: 12px;
+}
+
+.interactionRow button {
+    font-size: inherit;
+    border: none;
+    padding: 0;
+    color: #507299;
+    cursor: pointer;
+    background: none;
+}
+
+hr {
+    border-top: 2px solid #d0d0d0;
+    margin-top: 12px;
+    border: 0;
+}
+
+a {
+    color: #507299;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    main {
+        display: block;
+    }
+
+    .menuSection > ul > li {
+        display: inline-block;
+        margin-right: 12px;
+    }
+
+    .sideInfo {
+        display: none;
+    }
+}
